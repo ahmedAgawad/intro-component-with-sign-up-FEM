@@ -1,0 +1,129 @@
+/* reset & base styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	height: 100%;
+	background-image: url("../images/bg-intro-desktop.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #ff7a7a;
+	font-family: "Poppins", sans-serif;
+	color: #ffffff;
+}
+
+/* main */
+main {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1161px;
+	margin: auto;
+	padding-left: 23px;
+	padding-right: 23px;
+}
+
+/* main -- text */
+main .text {
+	flex: 0 1 500px;
+	margin-top: 10px;
+}
+
+.text .text__heading {
+	font-size: 3.1125rem;
+	line-height: 1.1;
+	margin-bottom: 27.5px;
+}
+
+.text .text__paragraph {
+	line-height: 1.65;
+}
+
+/* main -- formbox */
+main .formbox {
+	flex: 0 1 540px;
+}
+
+.formbox .formbox__header {
+	font-size: 0.9685rem;
+	font-weight: 400;
+	text-align: center;
+	background-color: rgb(96, 85, 165);
+	padding: 18px 0px;
+	border-radius: 10px;
+	color: rgb(239, 233, 251);
+	box-shadow: rgb(81 80 86 / 30%) 0px 8px 0px 0px;
+	margin-bottom: 24.5px;
+}
+
+.formbox__header strong {
+	font-weight: 600;
+	color: #ffffff;
+}
+
+.formbox form {
+	background-color: #ffffffff;
+	border-radius: 10px;
+	padding: 40px 40px 43px 40px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: rgb(81 80 86 / 30%) 0px 8px 0px 0px;
+}
+
+form input {
+	padding: 18px 32px 15px;
+	border-radius: 5px;
+	border: 1px solid rgba(194, 191, 191, 0.575);
+	margin-bottom: 20px;
+	font-family: "Poppins", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+
+form input::placeholder {
+	color: #767288;
+	font-size: 0.895rem;
+}
+
+form button {
+	padding: 18px 0px 12px;
+	background-color: #38cc8c;
+	border: none;
+	border-radius: 5px;
+	font-size: 0.9375rem;
+	font-family: Poppins, sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #ffffff;
+	letter-spacing: 1px;
+	box-shadow: #30bb7f 0px 4px 0px 0px;
+	margin-bottom: 18px;
+	cursor: pointer;
+	transition: background-color 300ms ease-in-out;
+}
+
+form button:hover {
+	background-color: #7de3b7;
+}
+
+form .formbox__terms {
+	font-size: 0.6875rem;
+	font-weight: 600;
+	color: #d4d2db;
+	text-align: center;
+}
+
+.formbox__terms a {
+	color: #ff7a7a ;
+	text-decoration: none;
+	font-weight: 700;
+}
