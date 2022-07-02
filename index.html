@@ -25,7 +25,9 @@
 		<title>Intro component with sign up form</title>
 	</head>
 	<body>
+		<!-- main -->
 		<main>
+			<!-- text -->
 			<div class="text">
 				<h1 class="text__heading">Learn to code by watching others</h1>
 				<p class="text__paragraph">
@@ -34,28 +36,53 @@
 				</p>
 			</div>
 
+			<!-- formbox -->
 			<div class="formbox">
 				<p class="formbox__header"><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
 
 				<form novalidate>
-					<div class="formbox__inputbox error">
-						<input type="text" id="firstName" placeholder="First Name" aria-label="first name" />
+					<div class="formbox__inputbox">
+						<input
+							type="text"
+							id="firstName"
+							placeholder="First Name"
+							aria-label="first name"
+							class="textInput"
+						/>
 						<div class="inputbox__error firstNameError">First Name cannot be empty</div>
 					</div>
 
 					<div class="formbox__inputbox">
-						<input type="text" id="lastName" placeholder="Last Name" aria-label="last name" />
+						<input
+							type="text"
+							id="lastName"
+							placeholder="Last Name"
+							aria-label="last name"
+							class="textInput"
+						/>
 						<div class="inputbox__error lastNameError">Last Name cannot be empty</div>
 					</div>
 
 					<div class="formbox__inputbox">
-						<input type="email" id="email" placeholder="Email Address" aria-label="email address" />
+						<input
+							type="email"
+							id="email"
+							placeholder="Email Address"
+							class="emailInput"
+							aria-label="email address"
+						/>
 						<div class="inputbox__error emailError"></div>
 					</div>
 
 					<div class="formbox__inputbox">
-						<input type="password" id="password" placeholder="Password" aria-label="password" />
-						<div class="formbox__error passwordError">Password cannot be empty</div>
+						<input
+							type="password"
+							id="password"
+							placeholder="Password"
+							aria-label="password"
+							class="textInput"
+						/>
+						<div class="inputbox__error passwordError">Password cannot be empty</div>
 					</div>
 
 					<button type="submit">Claim your free trial</button>

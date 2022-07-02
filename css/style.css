@@ -104,7 +104,8 @@ form input::placeholder {
 	border-width: 2px;
 }
 
-.formbox__inputbox.error .inputbox__error {
+.formbox__inputbox .inputbox__error {
+	display: none;
 	position: absolute;
 	right: 8px;
 	bottom: 4px;
@@ -112,6 +113,10 @@ form input::placeholder {
 	font-size: 0.6875rem;
 	font-weight: 500;
 	font-style: italic;
+}
+
+.formbox__inputbox.error .inputbox__error {
+	display: block;
 }
 
 .formbox__inputbox.error .inputbox__error::after {
