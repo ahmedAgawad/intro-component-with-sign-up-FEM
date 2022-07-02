@@ -79,8 +79,13 @@ main .formbox {
 	box-shadow: rgb(81 80 86 / 30%) 0px 8px 0px 0px;
 }
 
+form .formbox__inputbox {
+	position: relative;
+}
+
 form input {
-	padding: 18px 32px 15px;
+	width: 100%;
+	padding: 18px 58px 15px 32px;
 	border-radius: 5px;
 	border: 1px solid rgba(194, 191, 191, 0.575);
 	margin-bottom: 20px;
@@ -92,6 +97,33 @@ form input {
 form input::placeholder {
 	color: #767288;
 	font-size: 0.895rem;
+}
+
+.formbox__inputbox.error input {
+	border-color: #ff7a7a;
+	border-width: 2px;
+}
+
+.formbox__inputbox.error .inputbox__error {
+	position: absolute;
+	right: 8px;
+	bottom: 4px;
+	color: #ff7979;
+	font-size: 0.6875rem;
+	font-weight: 500;
+	font-style: italic;
+}
+
+.formbox__inputbox.error .inputbox__error::after {
+	position: absolute;
+	content: "";
+	background-image: url(../images/icon-error.svg);
+	width: 26px;
+	height: 26px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	top: -39px;
+	right: 15px;
 }
 
 form button {
@@ -123,7 +155,61 @@ form .formbox__terms {
 }
 
 .formbox__terms a {
-	color: #ff7a7a ;
+	color: #ff7a7a;
 	text-decoration: none;
 	font-weight: 700;
+}
+
+@media screen and (max-width: 1100px) {
+	/* main */
+	main {
+		flex-direction: column;
+	}
+
+	/* main -- text */
+	main .text {
+		flex: initial;
+		margin-top: 85px;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	.text .text__heading {
+		font-size: 2rem;
+	}
+
+	.text .text__paragraph {
+		max-width: 510px;
+		font-size: 0.95rem;
+	}
+
+	/* main -- formbox */
+	main .formbox {
+		flex: initial;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	.formbox .formbox__header {
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 0.9rem;
+	}
+
+	.formbox form {
+		padding: 25px;
+	}
+
+	form input {
+		font-size: 0.8rem;
+		padding-left: 20px;
+		padding-right: 40px;
+	}
+
+	.formbox__inputbox.error .inputbox__error::after {
+		width: 20px;
+		height: 20px;
+		top: -36px;
+		right: 7px;
+	}
 }
