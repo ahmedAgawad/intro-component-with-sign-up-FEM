@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution page](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-with-pure-cssjs-S1OyAmcGGw)
+- Live Site URL: [Live Website](https://intro-component-fem.netlify.app)
 
 ## My process
 
